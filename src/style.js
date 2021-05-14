@@ -66,4 +66,20 @@ export default makeStyles((theme) => ({
     borderRadius:'15px',
     marginTop:'20px'
   },
+  box:{
+    backgroundColor:'#EECAAF',
+    padding:'30px',
+    color:'#0F4E93',
+    
+    
+  },
+  footer:{
+    display:'flex',
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+  },
+  li:{
+    listStyle:'none'
+  },
+  
 }));

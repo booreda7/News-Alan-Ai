@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import { Typography } from '@material-ui/core';
+import { Typography, Container, Box, Grid, Link } from '@material-ui/core';
 import wordsToNumbers from 'words-to-numbers';
 import alanBtn from '@alan-ai/alan-sdk-web';
-
+import InstagramIcon from '@material-ui/icons/Instagram';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import TwitterIcon from '@material-ui/icons/Twitter';
 import myImage from './download.jpg';
 import  NewsCards  from './components/NewsCards/NewsCards';
 import useStyles from './style';
@@ -53,10 +55,20 @@ const App = () => {
       </div>
       <NewsCards articles={newsArticles} activeArticle={activeArticle} />
       
-        <div className={classes.footer}>
-          
-          
-        </div>
+        <Box className={classes.box}>
+          <Container maxWidth='lg'>
+            <Grid container>
+              <Grid item xs={12} sm={4} className={classes.footer}>
+                <Box> <strong> <h1> Contacts : </h1></strong></Box>
+                
+                  <li className={classes.li}> <Link  href='https://twitter.com/ArmyBhd' target='_blank'>  <TwitterIcon/> </Link> </li>
+                  <li className={classes.li}> <Link  href='https://www.instagram.com/boore_da/' target='_blank'>  <InstagramIcon /> </Link> </li>
+                  <li className={classes.li}> <Link  href='https://www.linkedin.com/in/reda-ait-cheikh-35021018b/' target='_blank'> <LinkedInIcon/> </Link> </li>
+                
+              </Grid>
+            </Grid>
+          </Container>
+        </Box>
     
     </div>
   );
