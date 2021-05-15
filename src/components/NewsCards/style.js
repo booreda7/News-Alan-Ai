@@ -5,6 +5,7 @@ export default makeStyles({
         padding:'0 5%',
         margin:'0',
         width:'100%'
+        
     },
     card:{
         display:'flex',
@@ -12,8 +13,9 @@ export default makeStyles({
         justifyContent:'space-between',
         alignItems:'center',
         width:'100%',
-        height:'50vh',
+        height:'100%',
         padding:'10%',
+        borderBottom:'10px solid #1780F6',
         borderRadius:'15px',
         color:'white',
         marginTop:'15%'

@@ -55,7 +55,7 @@ const App = () => {
       </div>
       <NewsCards articles={newsArticles} activeArticle={activeArticle} />
       
-        <Box className={classes.box}>
+       <Box className={classes.box}>
           <Container maxWidth='lg'>
             <Grid container>
               <Grid item xs={12} sm={4} className={classes.footer}>

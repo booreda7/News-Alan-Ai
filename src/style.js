@@ -67,11 +67,11 @@ export default makeStyles((theme) => ({
     marginTop:'20px'
   },
   box:{
-    backgroundColor:'#EECAAF',
+    position:'relative',
+    left:'300px',
+    marginTop:'50px',
     padding:'30px',
-    color:'#0F4E93',
-    
-    
+    color:'#1780F6',
   },
   footer:{
     display:'flex',
@@ -79,7 +79,9 @@ export default makeStyles((theme) => ({
     justifyContent: 'space-between',
   },
   li:{
-    listStyle:'none'
+    listStyle:'none',
+    position:'relative',
+    top:'7px'
   },
   
 }));
